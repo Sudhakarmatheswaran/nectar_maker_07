@@ -1,0 +1,8 @@
+sentence = input("Enter a sentence: ")
+words = sentence.split()
+reversed_words_list = []
+for word in words:
+    reversed_word = word[::-1]
+    reversed_words_list.append(reversed_word)
+result = " ".join(reversed_words_list)
+print("Reversed words:", result)
