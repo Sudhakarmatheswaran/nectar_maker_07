@@ -1,0 +1,13 @@
+units = float(input("Enter the total units consumed: "))
+bill_amount = 0
+if units <= 100:
+    bill_amount = 0
+elif units <= 250:
+    bill_amount = units * 0.50
+elif units <= 400:
+    bill_amount = units * 5.00
+elif units <= 500:
+    bill_amount = units * 10.00
+else:
+    bill_amount = units * 20.00
+print("Total Electricity Bill: ₹", bill_amount)

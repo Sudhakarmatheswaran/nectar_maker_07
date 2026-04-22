@@ -1,0 +1,15 @@
+a=int(input("enter the value of a :"))
+b=int(input("enter the value of b:"))
+c=int(input("enter the value of c:"))
+d=b**2-4*a*c
+if(d>0):
+   print("real and unequal roots")
+   x=(-b)-d**0.5/2*a
+   y=(-b)+d**0.5/2*a
+   print("the roots are ",x,"and",y)
+elif(d==0):
+   print("real and equal roots")
+   x=y=-b/2*a
+   print("the roots are:",x,"and",y)
+else:
+   print("the given roots are imaginary")

@@ -1,0 +1,8 @@
+p=float(input("enter the enter the principle amount:"))
+r=float(input("enter the annual interest rate:"))
+n=float(input("enter the number of years"))
+SI=(p*n*r)/100
+A=p*((1+r/100)**n)
+CI=A-p
+print("Simple Interest :",SI)
+print("Compound Interest:",CI)

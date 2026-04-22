@@ -1,0 +1,11 @@
+MIN_BALANCE = 1000.0
+PENALTY = 200.0
+balance = float(input("Enter current account balance: "))
+if balance <= MIN_BALANCE:
+    print("Warning: Balance is below the required minimum of", MIN_BALANCE)
+    balance = balance - PENALTY
+    print("Penalty of", PENALTY, "has been applied.")
+else:
+    print("Account maintains the required minimum balance.")
+print("-" * 50)
+print("Final Account Balance:", balance)

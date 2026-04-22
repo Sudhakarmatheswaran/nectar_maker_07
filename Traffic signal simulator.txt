@@ -1,0 +1,10 @@
+colour = input("Enter traffic light colour: ")
+match colour:
+    case "red":
+        print("Action: STOP")
+    case "yellow":
+        print("Action: READY")
+    case "green":
+        print("Action: GO")
+    case _:
+        print("Invalid Colour entered")
